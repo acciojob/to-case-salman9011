@@ -1,5 +1,13 @@
 function toCase(text) {
-  // write your code here
+  // Check if the input string is empty
+  if (text === "") {
+    return "-";
+  }
+
+  // Convert the string to lowercase and uppercase, then concatenate with "-"
+  const result = `${text.toLowerCase()}-${text.toUpperCase()}`;
+
+  return result;
 }
 
 // DO not change the code below
